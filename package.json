@@ -1,0 +1,37 @@
+{
+  "name": "social",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "development": "../social/node_modules/.bin/nodemon",
+    "build": "../social/node_modules/.bin/webpack --config webpack.config.client.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "^17.0.2",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-loader": "^4.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.8",
+    "@babel/preset-env": "^7.22.7",
+    "@babel/preset-react": "^7.22.5",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
+    "babel-loader": "^9.1.3",
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-react": "^7.32.2",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.0",
+    "react-refresh": "^0.14.0",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-middleware": "^6.1.1",
+    "webpack-hot-middleware": "^2.25.4",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
